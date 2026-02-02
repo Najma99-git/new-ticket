@@ -1,0 +1,30 @@
+Ticket: Users cannot access the site. 
+DNS 
+Command used:
+dig excellenthealthcareservices.co.uk
+Reason: Command was used to ask for the IP address. 
+```text
+  excellenthealthcareservices.co.uk. 13594 IN A   50.6.200.119
+
+  NETWORK
+  Command used:
+  ping -c 4 excellenthealthcareservices.co.uk
+  Reason: Command was to reach the web server 
+  ```text
+64 bytes from 50-6-200-119.seocentral.co.uk (50.6.200.119): icmp_seq=1 ttl=48 time=115 ms
+64 bytes from 50-6-200-119.seocentral.co.uk (50.6.200.119): icmp_seq=2 ttl=48 time=113 ms
+64 bytes from 50-6-200-119.seocentral.co.uk (50.6.200.119): icmp_seq=3 ttl=48 time=111 ms
+64 bytes from 50-6-200-119.seocentral.co.uk (50.6.200.119): icmp_seq=4 ttl=48 time=125 ms
+
+  WEBSERVER
+  Command used:
+  curl -I https://excellenthealthcareservices.co.uk
+  Reason: Command was used to fetch the website 
+  HTTP/2 200
+last-modified: Mon, 24 Mar 2025 12:38:13 GMT
+accept-ranges: bytes
+content-length: 12818
+content-type: text/html
+date: Mon, 02 Feb 2026 17:00:00 GMT
+server: Apache
+  
